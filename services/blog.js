@@ -7,14 +7,20 @@ var marked = require('marked');
 var fs = require('fs');
 
 module.exports = function (path) {
+    var _posts = require(path + '/posts');
     return {
         name: 'blog',
         read: function (req, resource, params, config, callback) {
             if(params) {
-                callback(null, marked(fs.readFileSync(path+params.md).toString()))
+                fs.readFile(path+params.md, function (err, data) {
+                    if(err) {
+                        callback(err, null);
+                    } else {
+                        callback(null, marked(data.toString()));
+                    }
+                });
             } else {
                 setTimeout(function () {
-                    var _posts = require(path + '/posts');
                     callback(null, JSON.parse(JSON.stringify(_posts)));
                 }, 10);
             }
