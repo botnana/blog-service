@@ -1,0 +1,21 @@
+{
+  "name": "botnana-blog-service",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Blog service based on markdown and fetchr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:mapacode/botnana-blog-service.git"
+  },
+  "author": "Sirius Wu",
+  "license": "ISC",
+  "dependencies": {
+    "csrf": "^2.0.6",
+    "fetchr": "^0.4.6",
+    "marked": "^0.3.3"
+  }
+}
