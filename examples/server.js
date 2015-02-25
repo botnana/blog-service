@@ -27,7 +27,9 @@ app.get('/all', function(req, res) {
                 data,
                 function (item, callback) {
                     blogService.read (null, null, item, null, function (err, data) {
-                        callback (null, [err, data]);
+                        item.error = err;
+                        item.value = data;
+                        callback (null, item);
                     });
                 },
                 function (err, results) {
@@ -38,9 +40,7 @@ app.get('/all', function(req, res) {
     });
 });
 
-app.get('/item/:md', function(req, res) {
-    console.log('/item/:md');
-    console.log(req.params.md);
+app.get('/post/:md', function(req, res) {
     blogService.read (null, null, req.params, null, function (err, data) {
         res.json([err, data]);
     });
