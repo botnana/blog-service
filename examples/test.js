@@ -7,7 +7,7 @@ var blogService = require('../index')(__dirname + '/posts/');
 
 console.log(blogService.name);
 
-blogService.read (null, null, null, null, function (err, data) {
+blogService.read (null, null, {}, null, function (err, data) {
     if(err) {
         console.log(err)
     } else {

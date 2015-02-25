@@ -11,7 +11,7 @@ module.exports = function (path) {
     return {
         name: 'blog',
         read: function (req, resource, params, config, callback) {
-            if(params) {
+            if(params && params.md) {
                 fs.readFile(path+params.md, function (err, data) {
                     if(err) {
                         callback(err, null);
