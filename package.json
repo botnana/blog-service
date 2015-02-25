@@ -14,7 +14,6 @@
   "author": "Sirius Wu",
   "license": "ISC",
   "dependencies": {
-    "csrf": "^2.0.6",
     "fetchr": "^0.4.6",
     "marked": "^0.3.3"
   }

@@ -5,7 +5,7 @@
 
 var express = require('express');
 var app = express();
-var blogService = require('../services/blog')(__dirname + '/posts/');
+var blogService = require('../index')(__dirname + '/posts/');
 var async = require('async');
 
 app.get('/list', function(req, res) {

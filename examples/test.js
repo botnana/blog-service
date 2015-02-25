@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var blogService = require('../services/blog')(__dirname + '/posts/');
+var blogService = require('../index')(__dirname + '/posts/');
 
 console.log(blogService.name);
 
