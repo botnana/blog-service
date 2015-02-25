@@ -16,7 +16,7 @@ module.exports = function (path) {
                     if(err) {
                         callback(err, null);
                     } else {
-                        callback(null, marked(data.toString()));
+                        callback(null, [marked(data.toString())]);
                     }
                 });
             } else {
