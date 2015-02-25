@@ -3,5 +3,5 @@
  */
 'use strict';
 
-module.exports = require('./services/blog');
+module.exports = require('./lib/blog');
 
