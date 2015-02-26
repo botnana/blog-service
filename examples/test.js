@@ -24,3 +24,20 @@ blogService.read (null, null, {}, null, function (err, data) {
     }
 });
 
+// Test multiple markdown files.
+blogService.read(null, null, {md: ['first_post.md', 'blogged_again.md']}, null, function (err, data) {
+    if(err) {
+        console.log(err);
+    } else {
+        console.log(data);
+    }
+});
+
+// Test multiple markdown files with a missing file.
+blogService.read(null, null, {md: ['first_post.md', 'missing.md', 'blogged_again.md']}, null, function (err, data) {
+    if(err) {
+        console.log(err);
+    } else {
+        console.log(data);
+    }
+});
