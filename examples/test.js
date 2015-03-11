@@ -7,7 +7,9 @@ var blogService = require('../index')(__dirname + '/posts/');
 
 console.log(blogService.name);
 
+// Get list of blog and all of its contents.
 blogService.read (null, null, {}, null, function (err, data) {
+    console.log('Get list of blog and all of the contents.');
     if(err) {
         console.log(err)
     } else {
@@ -26,6 +28,7 @@ blogService.read (null, null, {}, null, function (err, data) {
 
 // Test multiple markdown files.
 blogService.read(null, null, {md: ['first_post.md', 'blogged_again.md']}, null, function (err, data) {
+    console.log('Test multiple markdown files.');
     if(err) {
         console.log(err);
     } else {
@@ -35,6 +38,7 @@ blogService.read(null, null, {md: ['first_post.md', 'blogged_again.md']}, null, 
 
 // Test multiple markdown files with a missing file.
 blogService.read(null, null, {md: ['first_post.md', 'missing.md', 'blogged_again.md']}, null, function (err, data) {
+    console.log('Test multiple markdown files with a missing file.');
     if(err) {
         console.log(err);
     } else {
