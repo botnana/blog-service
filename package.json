@@ -1,6 +1,6 @@
 {
   "name": "botnana-blog-service",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "Blog service based on markdown and fetchr",
   "main": "index.js",
