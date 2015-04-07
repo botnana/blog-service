@@ -24,7 +24,7 @@ app.get('/all', function(req, res) {
             res.error(404).send(err);
         } else {
             async.map (
-                data,
+                data.posts,
                 function (item, callback) {
                     blogService.read (null, null, item, null, function (err, data) {
                         item.error = err;

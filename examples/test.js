@@ -14,7 +14,7 @@ blogService.read (null, null, {}, null, function (err, data) {
         console.log(err)
     } else {
         console.log(data)
-        data.forEach(function (value) {
+        data.posts.forEach(function (value) {
             blogService.read (null, null, value, null, function (err, data) {
                 if(err) {
                     console.log(err)
