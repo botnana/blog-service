@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var _posts = {
+var sections = [{
     section: 'Blog',
     posts: [
         {
@@ -18,6 +18,10 @@ var _posts = {
             author: 'Sirius Wu',
             preview: 'I did it again.'
         },
+    ]
+}, {
+    section: 'Botbone',
+    posts: [
         {
             title: 'Botbone 入門',
             md: 'botbone-getting-started.md',
@@ -27,6 +31,6 @@ var _posts = {
             preview: 'BotBone Getting Started Guide'
         }
     ]
-};
+}];
 
-module.exports = _posts;
+module.exports = sections;
