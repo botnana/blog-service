@@ -8,10 +8,10 @@ var app = express();
 var blogService = require('../index')(__dirname + '/posts/');
 var async = require('async');
 
-app.get('/list', function(req, res) {
+app.get('/posts', function(req, res) {
     blogService.read (null, null, null, null, function (err, data) {
         if(err) {
-            res.error(404).send(err);
+            res.send(404, err);
         } else {
             res.json(data)
         }
@@ -21,22 +21,25 @@ app.get('/list', function(req, res) {
 app.get('/tags/:tag', function(req, res) {
     blogService.read (null, null, null, null, function (err, posts) {
         if(err) {
-            res.error(404).send(err);
+            res.send(404, err);
         } else {
-            var results = posts.data.filter(
+            var data = posts.data.filter(
                 function (item) {
                     return (item.tags === req.params.tag);
                 }
             );
-            console.log(results);
-            res.json(results);
+            res.json({data: data});
         }
     });
 });
 
 app.get('/posts/:md', function(req, res) {
     blogService.read (null, null, req.params, null, function (err, data) {
-        res.json([err, data]);
+        if(err) {
+            res.send(404, err);
+        } else {
+            res.json(data);
+        };
     });
 });
 
