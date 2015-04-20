@@ -18,29 +18,23 @@ app.get('/list', function(req, res) {
     });
 });
 
-app.get('/section/:section', function(req, res) {
-    blogService.read (null, null, null, null, function (err, data) {
+app.get('/tags/:tag', function(req, res) {
+    blogService.read (null, null, null, null, function (err, posts) {
         if(err) {
             res.error(404).send(err);
         } else {
-            async.map (
-                data[parseInt(req.params.section)].posts,
-                function (item, callback) {
-                    blogService.read (null, null, item, null, function (err, data) {
-                        item.error = err;
-                        item.value = data;
-                        callback (null, item);
-                    });
-                },
-                function (err, results) {
-                    res.json(results);
+            var results = posts.data.filter(
+                function (item) {
+                    return (item.tags === req.params.tag);
                 }
             );
+            console.log(results);
+            res.json(results);
         }
     });
 });
 
-app.get('/post/:md', function(req, res) {
+app.get('/posts/:md', function(req, res) {
     blogService.read (null, null, req.params, null, function (err, data) {
         res.json([err, data]);
     });
