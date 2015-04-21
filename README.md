@@ -15,12 +15,9 @@ Add "botnana-blog-service": "git+ssh://git@bitbucket.org:mapacode/botnana-blog-s
 
 See examples/test.js and examples/server.js to know how to use the module.
 
-## Format
+## Format examples
 
-計畫改為使用 JSON API。
-
-
-Response:
+GET /api/resource/blog
 
     {
         "data" : [{
@@ -44,7 +41,8 @@ Response:
         }]
     }
 
-或 
+GET /api/resource/blog;md=e313gkdda.md
+
     {
         "data" : [{
             "title": "title",

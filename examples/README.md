@@ -9,4 +9,8 @@
     npm install
     node server.js
 
-and visit localhost:3000/list, localhost:3000/all, localhost:3000/post/first_blog.md
+and visit
+
+    localhost:3000/api/resource/blog
+    localhost:3000/api/resource/blog;md=first_post.md
+
