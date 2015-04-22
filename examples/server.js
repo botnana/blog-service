@@ -7,7 +7,6 @@ var express = require('express');
 var app = express();
 var Fetcher = require('fetchr');
 var blogService = require('../index')(__dirname + '/posts/');
-var async = require('async');
 
 Fetcher.registerFetcher(blogService);
 
