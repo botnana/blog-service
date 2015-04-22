@@ -9,13 +9,13 @@ var posts = {
         md: 'first_post.md',
         published: '2015-02-25',
         preview: 'Everyone has to start somewhere',
-        tags: 'blog'
+        tags: ['blog']
     }, {
         title: 'I Blogged Again',
         md: 'blogged_again.md',
         author: 'Sirius Wu',
         preview: 'I did it again.',
-        tags: 'blog'
+        tags: ['blog']
     }, {
         title: 'Botbone 入門',
         md: 'botbone-getting-started.md',
@@ -23,7 +23,7 @@ var posts = {
         author: 'Sirius Wu',
         price: '600',
         preview: 'BotBone Getting Started Guide',
-        tags: 'botbone'
+        tags: ['botbone']
     }]
 };
 

@@ -28,7 +28,7 @@ GET /api/resource/blog
             "author": "Sirius Wu",
             "price": "600",
             "preview": "bjkleadba",
-            "tags": "tag"
+            "tags": ["tag"]
         },{
             "title": "title",
             "md": "e313gkddb.md",
@@ -37,7 +37,7 @@ GET /api/resource/blog
             "author": "Sirius Wu",
             "price": "600",
             "preview": "bjkleadbb",
-            "tags": "tag"
+            "tags": ["tag"]
         }]
     }
 
@@ -53,7 +53,7 @@ GET /api/resource/blog;md=e313gkdda.md
             "price": "600",
             "preview": "bjkleadba",
             "content": "Content",
-            "tags": "tag"
+            "tags": ["tag"]
         }]
     }
 
