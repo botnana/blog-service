@@ -28,22 +28,3 @@ fetcher.read ('blog', {}, {}, function (err, posts) {
     }
 });
 
-// Test multiple markdown files.
-fetcher.read('blog', {md: ['first_post.md', 'blogged_again.md']}, {}, function (err, data) {
-    console.log('Test multiple markdown files.');
-    if(err) {
-        console.log(err);
-    } else {
-        console.log(data);
-    }
-});
-
-// Test multiple markdown files with a missing file.
-fetcher.read('blog', {md: ['first_post.md', 'missing.md', 'blogged_again.md']}, {}, function (err, data) {
-    console.log('Test multiple markdown files with a missing file.');
-    if(err) {
-        console.log(err);
-    } else {
-        console.log(data);
-    }
-});
