@@ -52,8 +52,8 @@ GET /api/resource/blog;md=e313gkdda.md
             "author": "Sirius Wu",
             "price": "600",
             "preview": "bjkleadba",
-            "content": "Content",
-            "tags": ["tag"]
+            "tags": ["tag"],
+            "content": "Content"
         }]
     }
 

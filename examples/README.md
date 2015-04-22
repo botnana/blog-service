@@ -1,13 +1,27 @@
 # Examples
 
-## Use services/blog.js directly.
+## Use lib/blog.js directly.
 
     node test.js
 
-## Use services/blog.js throuth a server.
+## Use lib/blog.js throuth a server.
 
     npm install
     node server.js
+
+and visit
+
+    localhost:3000/api/resource/blog
+    localhost:3000/api/resource/blog;md=first_post.md
+
+## Use lib/blog-pg.js throuth a server.
+
+At first create a test database with ./scripts/db.sql.
+
+Start the server
+
+    npm install
+    node server-pg.js
 
 and visit
 
