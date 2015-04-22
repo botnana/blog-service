@@ -3,5 +3,8 @@
  */
 'use strict';
 
-module.exports = require('./lib/blog');
+module.exports = {
+    fs: require('./lib/blog'),
+    pg: require('./lib/blog-pg')
+};
 
