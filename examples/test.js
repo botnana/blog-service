@@ -3,7 +3,11 @@
  */
 'use strict';
 
-var blogService = require('../index').fs(__dirname + '/posts/');
+var blogConfig = {
+    "module": "fs",
+    "path": __dirname + '/posts/'
+};
+var blogService = require('../index').configure(blogConfig);
 var Fetcher = require('fetchr');
 
 Fetcher.registerFetcher(blogService);

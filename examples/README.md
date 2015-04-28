@@ -3,6 +3,7 @@
 ## Use lib/blog.js directly.
 
     node test.js
+    node test-crud.js
 
 ## Use lib/blog.js throuth a server.
 
@@ -13,6 +14,10 @@ and visit
 
     localhost:3000/api/resource/blog
     localhost:3000/api/resource/blog;md=first_post.md
+
+## Use lib/blog-pg.js directly.
+
+    node test-crude-pg.js
 
 ## Use lib/blog-pg.js throuth a server.
 
