@@ -25,9 +25,17 @@ fetcher.read ('blog', {}, {}, function (err, posts) {
                 if(err) {
                     console.log(err)
                 } else {
-                   console.log(data)
+                    console.log(data)
                 }
             });
+        });
+        fetcher.read ('blog', {md: 'unknown'}, {}, function (err, data) {
+            if(err) {
+                console.log("Test with an unknown post success.")
+                console.log(err)
+            } else {
+                console.log("Test with an unknown post failed!!!!")
+            }
         });
     }
 });
