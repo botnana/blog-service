@@ -27,15 +27,15 @@ async.series([
             "preview": "Test post...",
             "tags": ["test"],
             "marked": "* test"
-        }, {}, function (err, post1) {
+        }, {}, function (err, result) {
             if(err) {
                 console.log(err);
             } else {
                 console.log('create post');
-                console.log(post1);
+                console.log(result);
             }
-            post = post1;
-            callback(err, post1);
+            post = result;
+            callback(err, result);
         });
     },
     function(callback) {
@@ -59,14 +59,14 @@ async.series([
             "preview": "Test post again...",
             "tags": ["test", "again"],
             "marked": "* test again"
-        }, {}, function (err, post3) {
+        }, {}, function (err, result) {
             if(err) {
                 console.log(err);
             } else {
                 console.log('update post');
-                console.log(post3);
+                console.log(result);
             }
-            callback(err, post3);
+            callback(err, result);
         });
     },
     function(callback) {
