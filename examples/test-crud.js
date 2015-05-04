@@ -26,7 +26,7 @@ async.series([
             "price": "800",
             "preview": "Test post...",
             "tags": ["test"],
-            "marked": "* test"
+            "content": "* test"
         }, {}, function (err, result) {
             if(err) {
                 console.log(err);
@@ -39,7 +39,7 @@ async.series([
         });
     },
     function(callback) {
-        fetcher.read ('blog', {md: post.md}, {}, function(err, post2) {
+        fetcher.read ('blog', {id: post.id}, {}, function(err, post2) {
             if(err) {
                 console.log(err);
             } else {
@@ -51,14 +51,14 @@ async.series([
     },
     function(callback) {
         fetcher.update ('blog', {
-            "md": post.md,
+            "id": post.id,
             "title": "Test Again",
             "published": "2015-04-24",
             "author": "Cheng-Chang Wu",
             "price": "700",
             "preview": "Test post again...",
             "tags": ["test", "again"],
-            "marked": "* test again"
+            "content": "* test again"
         }, {}, function (err, result) {
             if(err) {
                 console.log(err);
@@ -70,7 +70,7 @@ async.series([
         });
     },
     function(callback) {
-        fetcher.read ('blog', {md: post.md}, {}, function(err, post4) {
+        fetcher.read ('blog', {id: post.id}, {}, function(err, post4) {
             if(err) {
                 console.log(err);
             } else {
@@ -81,7 +81,7 @@ async.series([
         });
     },
     function(callback) {
-        fetcher.delete ('blog', {"md": post.md}, {}, function(err, result) {
+        fetcher.delete ('blog', {"id": post.id}, {}, function(err, result) {
             if(err) {
                 console.log(err);
             } else {

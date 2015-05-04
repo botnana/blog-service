@@ -21,8 +21,8 @@ GET /api/resource/blog
 
     {
         "data" : [{
+            "id": "e313gkdda",
             "title": "title",
-            "md": "e313gkdda.md",
             "img": "e313gkdda.png",
             "published": "2015-02-25",
             "author": "Sirius Wu",
@@ -30,8 +30,8 @@ GET /api/resource/blog
             "preview": "bjkleadba",
             "tags": ["tag"]
         },{
+            "id": "e313gkddb",
             "title": "title",
-            "md": "e313gkddb.md",
             "img": "e313gkddb.png",
             "published": "2015-02-25",
             "author": "Sirius Wu",
@@ -41,12 +41,12 @@ GET /api/resource/blog
         }]
     }
 
-GET /api/resource/blog;md=e313gkdda.md
+GET /api/resource/blog;id=e313gkdda
 
     {
         "data" : [{
+            "id": "e313gkdda",
             "title": "title",
-            "md": "e313gkdda.md",
             "img": "e313gkdda.png",
             "published": "2015-02-25",
             "author": "Sirius Wu",

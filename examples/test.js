@@ -29,7 +29,7 @@ fetcher.read ('blog', {}, {}, function (err, posts) {
                 }
             });
         });
-        fetcher.read ('blog', {md: 'unknown'}, {}, function (err, data) {
+        fetcher.read ('blog', {id: 'unknown'}, {}, function (err, data) {
             if(err) {
                 console.log("Test with an unknown post success.")
                 console.log(err)
