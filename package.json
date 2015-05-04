@@ -15,7 +15,6 @@
   "license": "ISC",
   "dependencies": {
     "fetchr": "^0.4.6",
-    "node-uuid": "^1.4.3",
     "pg": "^4.3.0"
   }
 }

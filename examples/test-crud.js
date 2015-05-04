@@ -20,6 +20,7 @@ var post;
 async.series([
     function(callback) {
         fetcher.create ('blog', {
+            "id": "test",
             "title": "Test",
             "published": "2015-04-23",
             "author": "Sirius Wu",
