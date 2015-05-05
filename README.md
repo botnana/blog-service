@@ -21,6 +21,7 @@ GET /api/resource/blog
 
     {
         "data" : [{
+            "type": "posts",
             "id": "e313gkdda",
             "title": "title",
             "img": "e313gkdda.png",
@@ -30,6 +31,7 @@ GET /api/resource/blog
             "preview": "bjkleadba",
             "tags": ["tag"]
         },{
+            "type": "posts",
             "id": "e313gkddb",
             "title": "title",
             "img": "e313gkddb.png",
@@ -45,6 +47,7 @@ GET /api/resource/blog;id=e313gkdda
 
     {
         "data" : [{
+            "type": "posts",
             "id": "e313gkdda",
             "title": "title",
             "img": "e313gkdda.png",

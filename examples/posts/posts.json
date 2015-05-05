@@ -1,1 +1,26 @@
-{"data":[{"id":"first_post","title":"My First Blog Post","published":"2015-02-25","preview":"Everyone has to start somewhere","tags":["blog"]},{"id":"blogged_again","title":"I Blogged Again","author":"Sirius Wu","preview":"I did it again.","tags":["blog"]},{"id":"botbone-getting-started","title":"Botbone 入門","published":"2015-02-25","author":"Sirius Wu","price":"600","preview":"BotBone Getting Started Guide","tags":["botbone"]}]}
+{
+    "data":[{
+        "type": "posts",
+        "id": "first_post",
+        "title": "My First Blog Post",
+        "published": "2015-02-25",
+        "preview": "Everyone has to start somewhere",
+        "tags": ["blog"]
+    }, {
+        "type": "posts",
+        "id": "blogged_again",
+        "title": "I Blogged Again",
+        "author": "Sirius Wu",
+        "preview": "I did it again.",
+        "tags": ["blog"]
+    },{
+        "type": "posts",
+        "id": "botbone-getting-started",
+        "title": "Botbone 入門",
+        "published": "2015-02-25",
+        "author": "Sirius Wu",
+        "price": "600",
+        "preview": "BotBone Getting Started Guide",
+        "tags":["botbone"]
+    }]
+}
