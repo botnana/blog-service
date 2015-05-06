@@ -13,7 +13,7 @@
 and visit
 
     localhost:3000/api/resource/blog
-    localhost:3000/api/resource/blog;id=first_post
+    localhost:3000/api/resource/blog;id=first_post.md
 
 ## Use lib/blog-pg.js directly.
 
@@ -31,5 +31,5 @@ Start the server
 and visit
 
     localhost:3000/api/resource/blog
-    localhost:3000/api/resource/blog;id=first_post
+    localhost:3000/api/resource/blog;id=first_post.md
 
